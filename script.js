@@ -1,12 +1,13 @@
-// Firebase Configuration
+require('dotenv').config();
+
 const firebaseConfig = {
-    apiKey: "AIzaSyDXxi4Uy-OLW8r2FzCU_PZdIk1b5mDAjkE",
-    authDomain: "calculator-54c42.firebaseapp.com",
-    databaseURL: "https://calculator-54c42-default-rtdb.firebaseio.com",
-    projectId: "calculator-54c42",
-    storageBucket: "calculator-54c42.appspot.com",
-    messagingSenderId: "310160878286",
-    appId: "1:310160878286:web:7100e62503a0cdae1ffe9f"
+    apiKey: process.env.FIREBASE_API_KEY,
+    authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+    databaseURL: process.env.FIREBASE_DATABASE_URL,
+    projectId: process.env.FIREBASE_PROJECT_ID,
+    storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.FIREBASE_APP_ID
 };
 
 // Initialize Firebase
